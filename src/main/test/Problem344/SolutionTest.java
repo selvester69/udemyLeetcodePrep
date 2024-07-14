@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.Problem344.Solution344;
+import main.java.problems.Problem344.*;
 
 public class SolutionTest {
     Solution344 solution = new Solution344();
