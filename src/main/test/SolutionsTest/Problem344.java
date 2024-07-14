@@ -1,4 +1,4 @@
-package main.test.Problem344;
+package main.test.SolutionsTest;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import main.java.problems.Problem344.*;
 
-public class SolutionTest {
+public class Problem344 {
     Solution solution = new Solution();
 
     @Test

@@ -14,6 +14,21 @@ public class Util {
         Arrays.stream(arr).forEach(val -> System.out.println(val));
     }
 
+    public static String getMinString(String[] str) {
+        int index = 0;
+        int minLength = Integer.MAX_VALUE;
+        if (str.length == 0)
+            return "";
+        for (int i = 0; i < str.length; i++) {
+            if (str[i].length() < minLength) {
+                minLength = str[i].length();
+                index = i;
+            }
+        }
+        return str[index];
+
+    }
+
     public static void main(String[] args) {
         Util.print(new int[] { 1, 2, 3, 4, 5 });
     }
