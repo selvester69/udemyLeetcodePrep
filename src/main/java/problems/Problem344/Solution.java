@@ -25,7 +25,7 @@ package main.java.problems.Problem344;
  * 
  */
 
-public class Solution344 {
+public class Solution {
 
     // using 2 pointer replace first and last
     public void reverseString(char[] s) {

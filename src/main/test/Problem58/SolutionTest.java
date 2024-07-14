@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.problems.Problem58.Solution58;
+import main.java.problems.Problem58.Solution;
 
 public class SolutionTest {
-    Solution58 solution = new Solution58();
+    Solution solution = new Solution();
 
     @Test
     public void testMultipleWords_0() {

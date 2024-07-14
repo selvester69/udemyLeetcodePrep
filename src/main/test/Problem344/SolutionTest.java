@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import main.java.problems.Problem344.*;
 
 public class SolutionTest {
-    Solution344 solution = new Solution344();
+    Solution solution = new Solution();
 
     @Test
     public void testMultipleCharacters() {

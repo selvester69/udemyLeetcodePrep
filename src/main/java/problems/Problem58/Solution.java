@@ -30,9 +30,9 @@ package main.java.problems.Problem58;
  * There will be at least one word in s.
  */
 
-public class Solution58 {
+public class Solution {
     public static void main(String[] args) {
-        Solution58 sol = new Solution58();
+        Solution sol = new Solution();
         System.out.println(sol.lengthOfLastWord("Python"));
         System.out.println(sol.lengthOfLastWord("   This   is   a   test  "));
         System.out.println(sol.lengthOfLastWord("cat   "));
