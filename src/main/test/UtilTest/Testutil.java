@@ -10,6 +10,6 @@ public class Testutil {
 
     @Test
     public void testPrint() {
-        util.print(new int[] { 1, 2, 3, 4, 5 });
+        Util.print(new int[] { 1, 2, 3, 4, 5 });
     }
 }

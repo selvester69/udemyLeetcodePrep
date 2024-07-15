@@ -29,6 +29,28 @@ public class Util {
 
     }
 
+    public static int calculate(int op1, int op2, char op) {
+        int res = 0;
+        switch (op) {
+            case '+':
+                res = op1 + op2;
+                break;
+            case '-':
+                res = Math.abs(op1 - op2);
+                break;
+            case '*':
+                res = op1 * op2;
+                break;
+            case '/':
+                res = op1 / op2;
+                break;
+            default:
+                break;
+        }
+        return res;
+
+    }
+
     public static void main(String[] args) {
         Util.print(new int[] { 1, 2, 3, 4, 5 });
     }
