@@ -72,7 +72,7 @@ public class Solution {
     }
 
     // improvement
-    public String longestCommonPrefix(String[] str) {
+    public String longestCommonPrefix_2(String[] str) {
         if (str.length == 0)
             return "";
         else if (str.length == 1)
@@ -88,6 +88,30 @@ public class Solution {
             op += minWord.charAt(i);
         }
         return op;
+    }
+
+    // improvement using StringBuilder
+    public String longestCommonPrefix(String[] str) {
+        if (str == null || str.length == 0)
+            return "";
+        else if (str.length == 1)
+            return str[0];
+        StringBuilder op = new StringBuilder("");
+        int minLength = str[0].length();
+        for (String s : str) {
+            minLength = Math.min(minLength, s.length());
+        }
+        if (minLength == 0)
+            return "";
+        for (int i = 0; i < minLength; i++) {
+            for (int j = 1; j < str.length; j++) {
+                if (str[j].charAt(i) != str[j - 1].charAt(i)) {
+                    return op.toString();
+                }
+            }
+            op.append(str[0].charAt(i));
+        }
+        return op.toString();
     }
 
 }
