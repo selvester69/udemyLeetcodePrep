@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.problems.Problem412.Solution;
+import main.java.EasyProblems.Problem412.Solution;
 
 public class Problem412 {
     Solution solution = new Solution();

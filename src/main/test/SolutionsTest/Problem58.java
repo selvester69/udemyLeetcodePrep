@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.problems.Problem58.Solution;
+import main.java.EasyProblems.Problem58.Solution;
 
 public class Problem58 {
     Solution solution = new Solution();

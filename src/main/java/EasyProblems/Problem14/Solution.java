@@ -1,4 +1,4 @@
-package main.java.problems.Problem14;
+package main.java.EasyProblems.Problem14;
 
 import main.java.Util.Util;
 

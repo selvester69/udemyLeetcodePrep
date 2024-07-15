@@ -1,4 +1,4 @@
-package main.java.problems.Problem344;
+package main.java.EasyProblems.Problem344;
 
 /**
  * Write a function that reverses a string. The input string is given as an
