@@ -51,6 +51,14 @@ public class Util {
 
     }
 
+    public static char[] fillArrayWithAlphabet() {
+        char[] arr = new char[26];
+        for (int i = 0; i < 26; i++) {
+            arr[i] = (char) ('A' + i);
+        }
+        return arr;
+    }
+
     public static void main(String[] args) {
         Util.print(new int[] { 1, 2, 3, 4, 5 });
     }
