@@ -1,6 +1,6 @@
-package main.java.Easy.Problem14;
+package Easy.Problem14;
 
-import main.java.Util.Util;
+import Util.Util;
 
 /**
  * Write a function to find the longest common prefix string amongst an array of

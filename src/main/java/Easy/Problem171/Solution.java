@@ -1,6 +1,4 @@
-package main.java.Easy.Problem171;
-
-import main.java.Util.Util;
+package Easy.Problem171;
 
 /**
  * Given a string columnTitle that represents the column title as appears in an

@@ -1,4 +1,4 @@
-package main.java.Easy.Problem58;
+package Easy.Problem58;
 
 /**
  * Given a string s consisting of words and spaces, return the length of the

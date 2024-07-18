@@ -1,10 +1,10 @@
-package test.java.SolutionsTest;
+package SolutionsTest;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.Easy.Problem344.*;
+import Easy.Problem344.*;
 
 public class Problem344 {
     Solution solution = new Solution();

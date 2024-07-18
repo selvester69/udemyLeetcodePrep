@@ -1,10 +1,10 @@
-package test.java.SolutionsTest;
+package SolutionsTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.Medium.Problem150.Solution;
+import Medium.Problem150.Solution;
 
 public class Problem150 {
 

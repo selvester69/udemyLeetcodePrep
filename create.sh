@@ -36,7 +36,7 @@ package $PACKAGE_NAME;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import main.java.$PROBLEM_TYPE.$PROBLEM_NUMBER.Solution;
+import $PROBLEM_TYPE.$PROBLEM_NUMBER.Solution;
 
 public class ${PROBLEM_NUMBER} {
     

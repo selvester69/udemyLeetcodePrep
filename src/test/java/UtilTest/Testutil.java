@@ -1,8 +1,8 @@
-package test.java.UtilTest;
+package UtilTest;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.Util.Util;
+import Util.Util;
 
 public class Testutil {
 

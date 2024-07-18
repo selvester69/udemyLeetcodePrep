@@ -1,4 +1,4 @@
-package test.java.SolutionsTest;
+package SolutionsTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import main.java.Easy.Problem412.Solution;
+import Easy.Problem412.Solution;
 
 public class Problem412 {
     Solution solution = new Solution();

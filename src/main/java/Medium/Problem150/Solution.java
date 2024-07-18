@@ -1,8 +1,8 @@
-package main.java.Medium.Problem150;
+package Medium.Problem150;
 
 import java.util.Stack;
 
-import main.java.Util.Util;
+import Util.Util;
 
 /**
  * You are given an array of strings tokens that represents an arithmetic
