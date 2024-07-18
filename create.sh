@@ -1,0 +1,55 @@
+#!/bin/bash
+if [[ $# -ne 2 ]]; then
+    echo "Usage: $0 <package_name> <problem_type>"
+    echo "problem_type must be one of: Easy, Medium, Hard"
+    exit 1
+fi
+
+PROBLEM_NUMBER=$1
+CLASS_NAME="Solution"
+SRC_DIR="src/main/java"
+TEST_DIR="src/test/java"
+PROBLEM_TYPE=$2
+
+echo "entered values are $1 , $2"
+
+# Create the package directory structure
+mkdir -p $SRC_DIR/$PROBLEM_TYPE/$PROBLEM_NUMBER
+echo $SRC_DIR/$PROBLEM_TYPE/$PROBLEM_NUMBER
+echo $TEST_DIR
+
+# Create the Java class file
+cat <<EOL >$SRC_DIR/$PROBLEM_NUMBER/$CLASS_NAME.java
+package $PACKAGE_NAME;
+
+public class $CLASS_NAME {
+
+    // TODO: Implement class methods and properties
+
+}
+EOL
+
+# Create the test file
+cat <<EOL >$TEST_DIR/SolutionsTest/${PROBLEM_NUMBER}.java
+package $PACKAGE_NAME;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+import main.java.$PROBLEM_TYPE.$PROBLEM_NUMBER.Solution;
+
+public class ${PROBLEM_NUMBER} {
+    
+    Solution solution = new Solution();
+
+    @Test
+    void testExample() {
+        
+        Solution solution = new Solution();
+        assertNotNull(instance);
+    }
+
+}
+EOL
+
+echo "Java class and test file created successfully."

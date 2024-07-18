@@ -1,4 +1,4 @@
-package main.java.MediumProblems.Problem150;
+package main.java.Medium.Problem150;
 
 import java.util.Stack;
 
