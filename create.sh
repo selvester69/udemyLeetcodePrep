@@ -44,8 +44,7 @@ public class ${PROBLEM_NUMBER} {
 
     @Test
     void testExample() {
-        
-        assertNotNull(instance);
+        assertNotNull(solution);
     }
 
 }
