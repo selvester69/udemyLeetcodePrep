@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $# -ne 2 ]]; then
-    echo "Usage: $0 <package_name> <problem_type>"
+    echo "Usage: $0 <problem_number> <problem_type>"
     echo "problem_type must be one of: Easy, Medium, Hard"
     exit 1
 fi
@@ -19,8 +19,8 @@ echo $SRC_DIR/$PROBLEM_TYPE/$PROBLEM_NUMBER
 echo $TEST_DIR
 
 # Create the Java class file
-cat <<EOL >$SRC_DIR/$PROBLEM_NUMBER/$CLASS_NAME.java
-package $PACKAGE_NAME;
+cat <<EOL >$SRC_DIR/$PROBLEM_TYPE/$PROBLEM_NUMBER/${CLASS_NAME}.java
+package $PROBLEM_TYPE.$PROBLEM_NUMBER;
 
 public class $CLASS_NAME {
 
@@ -31,7 +31,7 @@ EOL
 
 # Create the test file
 cat <<EOL >$TEST_DIR/SolutionsTest/${PROBLEM_NUMBER}.java
-package $PACKAGE_NAME;
+package SolutionsTest;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -45,7 +45,6 @@ public class ${PROBLEM_NUMBER} {
     @Test
     void testExample() {
         
-        Solution solution = new Solution();
         assertNotNull(instance);
     }
 
