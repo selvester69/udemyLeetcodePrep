@@ -80,4 +80,19 @@ public class Solution {
         return sb.reverse().toString();
     }
 
+    // ====> Method 2 using stack pointer instead of actual stack <====
+    public String removeDuplicates_CharArray(String s) {
+        char[] charArr = s.toCharArray();
+        int stackPtr = -1;
+        for (int i = 0; i < charArr.length; i++) {
+            if (stackPtr == -1 || charArr[i] != charArr[stackPtr]) {
+                stackPtr++;
+                charArr[stackPtr] = charArr[i];
+            } else {
+                stackPtr--;
+            }
+        }
+
+        return new String(charArr, 0, stackPtr + 1);
+    }
 }

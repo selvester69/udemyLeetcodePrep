@@ -61,7 +61,7 @@ public class Problem1047 {
     public void testComplexCase1_usingRecursion() {
 
         String input = "abbcccbba";
-        String expected = "";
+        String expected = "aca";
         assertEquals(expected, solution.removeDuplicates_recursion(input));
     }
 
