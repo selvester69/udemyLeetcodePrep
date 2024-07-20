@@ -42,34 +42,8 @@ import java.util.Stack;
 
 public class Solution {
 
-    public String removeDuplicates_2(String s, int k) {
-        if (s == null || s.length() == 0)
-            return "";
-        if (s.length() < k)
-            return s;
-        char[] arr = s.toCharArray();
-        int left = -1;
-        int freq = 0;
-        for (char ch : arr) {
-            if (left == -1 || arr[left] != ch) {
-                arr[++left] = ch;
-                freq = 1;
-            } else {
-                freq++;
-                arr[++left] = ch;
-                if (freq == k) {
-                    while (freq > 0) {
-                        left--;
-                        freq--;
-                    }
-                }
-            }
-
-        }
-        return new String(arr, 0, left + 1);
-    }
-
-    public String removeDuplicates(String s, int k) {
+    // =====>Method1<=======fails on one case on leetcode env==
+    public String removeDuplicates_1(String s, int k) {
         Stack<Character> st = new Stack<>();
         int[] arr = new int[26];
         for (char ch : s.toCharArray()) {
@@ -84,7 +58,6 @@ public class Solution {
                 }
             }
         }
-        ;
         StringBuilder sb = new StringBuilder();
         while (!st.isEmpty()) {
             char ch = st.pop();
@@ -95,6 +68,44 @@ public class Solution {
         }
         return sb.reverse().toString();
 
+    }
+
+    /**
+     * InnerClass
+     */
+    class Pair {
+        char character;
+        int frequency;
+
+        Pair(char character, int frequency) {
+            this.character = character;
+            this.frequency = frequency;
+        }
+    }
+
+    // =====>Method2<======works on leetcode env===
+    public String removeDuplicates(String s, int k) {
+        Stack<Pair> st = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (st.isEmpty() || s.charAt(i) != st.peek().character) {
+                st.push(new Pair(s.charAt(i), 1));
+            } else {
+                st.peek().frequency++;
+                if (st.peek().frequency == k) {
+                    st.pop();
+                }
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!st.isEmpty()) {
+            Pair p = st.peek();
+            for (int i = 0; i < p.frequency; i++) {
+                sb.append(p.character);
+            }
+            st.pop();
+        }
+
+        return sb.reverse().toString();
     }
 
     public static void main(String[] args) {
