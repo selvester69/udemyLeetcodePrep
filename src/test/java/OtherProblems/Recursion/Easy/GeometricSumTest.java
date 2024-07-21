@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import OtherProblems.Recursion.Easy.GeometricSum;
-
 public class GeometricSumTest {
 
     private static final double DELTA = 1e-6; // Tolerance for floating-point comparison

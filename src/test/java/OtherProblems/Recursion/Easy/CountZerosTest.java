@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import OtherProblems.Recursion.Easy.CountZeros;
-
 public class CountZerosTest {
 
     CountZeros zeroCounter = new CountZeros();

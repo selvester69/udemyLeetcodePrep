@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import OtherProblems.Recursion.Easy.DigitSum;
-
 public class DigitSumTest {
 
     DigitSum digitSum = new DigitSum();

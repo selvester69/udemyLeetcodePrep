@@ -7,8 +7,6 @@ import java.io.PrintStream;
 
 import org.junit.jupiter.api.Test;
 
-import OtherProblems.Recursion.Easy.NumberPrinter;
-
 public class NumberPrinterTest {
 
     NumberPrinter numberPrinter = new NumberPrinter();
