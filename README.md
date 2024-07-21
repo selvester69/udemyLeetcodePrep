@@ -34,3 +34,15 @@ Problem 58: length of the last word.
 Date 20-JUL-2024
 Problem 1209: Submission is giving wrong result but same test case is working in normal run
 # ################# Problem 1209 - Review Later ################
+
+
+Date 21-JUL-2024
+SideKick: Easy Recursion Problems
+1.Fibonacci Number
+2.Power
+3.Print Number
+4.Number of Digits
+5.Sum of Digits
+6.Multiplication
+7.Count Zeros
+8.Geometric Sum
