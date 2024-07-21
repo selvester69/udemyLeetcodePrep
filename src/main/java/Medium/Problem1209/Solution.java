@@ -42,34 +42,7 @@ import java.util.Stack;
 
 public class Solution {
 
-    // =====>Method1<=======fails on one case on leetcode env==
-    public String removeDuplicates_1(String s, int k) {
-        Stack<Character> st = new Stack<>();
-        int[] arr = new int[26];
-        for (char ch : s.toCharArray()) {
-            if (st.isEmpty() || st.peek() != ch) {
-                st.push(ch);
-                arr[ch - 97] = arr[ch - 97] + 1;
-            } else {
-                arr[ch - 97] = arr[ch - 97] + 1;
-                if (arr[ch - 97] >= k) {
-                    st.pop();
-                    arr[ch - 97] = arr[ch - 97] - k;
-                }
-            }
-        }
-        StringBuilder sb = new StringBuilder();
-        while (!st.isEmpty()) {
-            char ch = st.pop();
-            while (arr[ch - 97] > 0) {
-                sb.append(ch);
-                arr[ch - 97] = arr[ch - 97] - 1;
-            }
-        }
-        return sb.reverse().toString();
-
-    }
-
+    // =====>Method2<======works on leetcode env===
     /**
      * InnerClass
      */
@@ -109,8 +82,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
-        System.out.println(s.removeDuplicates("yfttttfbbbbnnnnffbgffffgbbbbgssssgthyyyy", 2));
+        System.out.println(new Solution().removeDuplicates("yfttttfbbbbnnnnffbgffffgbbbbgssssgthyyyy",
+                4));
     }
 
 }
