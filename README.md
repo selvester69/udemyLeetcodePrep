@@ -38,11 +38,22 @@ Problem 1209: Submission is giving wrong result but same test case is working in
 
 Date 21-JUL-2024
 SideKick: Easy Recursion Problems
-1.Fibonacci Number
-2.Power
-3.Print Number
-4.Number of Digits
-5.Sum of Digits
-6.Multiplication
-7.Count Zeros
-8.Geometric Sum
+1. Fibonacci Number
+2. Power
+3. Print Number
+4. Number of Digits
+5. Sum of Digits
+6. Multiplication
+7. Count Zeros
+8. Geometric Sum
+
+Date 22-JUL-2024
+SideKick: Medium Recursion Problems
+1. Check if array is sorted
+2. Sum of array
+3. Check if element is Present in array
+4. First index of element
+5. Last Index of element
+6. Store all Position of the element
+7. Count Occurence of element 
+8. Check Palindrome
