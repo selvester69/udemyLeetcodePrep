@@ -1,8 +1,10 @@
-package OtherProblems.Recursion;
+package OtherProblems.Recursion.Easy;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+
+import OtherProblems.Recursion.Easy.FibonacciNumber;
 
 public class FibonacciTest {
 

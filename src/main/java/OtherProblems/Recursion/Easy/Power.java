@@ -1,4 +1,4 @@
-package OtherProblems.Recursion;
+package OtherProblems.Recursion.Easy;
 
 public class Power {
 

@@ -1,4 +1,4 @@
-package OtherProblems.Recursion;
+package OtherProblems.Recursion.Easy;
 
 /** Print nth fibonacci number */
 public class FibonacciNumber {
