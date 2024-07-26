@@ -14,6 +14,10 @@ public class Util {
         Arrays.stream(arr).forEach(val -> System.out.println(val));
     }
 
+    public static void printSingleLine(int[] arr) {
+        Arrays.stream(arr).forEach(val -> System.out.print(val + " "));
+    }
+
     public static String getMinString(String[] str) {
         int index = 0;
         int minLength = Integer.MAX_VALUE;
@@ -57,6 +61,12 @@ public class Util {
             arr[i] = (char) ('A' + i);
         }
         return arr;
+    }
+
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
     public static void main(String[] args) {
