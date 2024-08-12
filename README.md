@@ -57,3 +57,7 @@ SideKick: Medium Recursion Problems
 6. Store all Position of the element
 7. Count Occurence of element 
 8. Check Palindrome
+
+Date 29-JUL-2024
+Skipped Jump-2 hard leetcode problem - 45
+Problem 484 Permutation  - premium
